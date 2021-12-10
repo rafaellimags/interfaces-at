@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --shadow-blue: #000080 2px 4px
+}
+
+body {
+    background-color: #f8f8f8;
+}
+
+/* .container {
+    width: 100vw;
+    height: 100vh;
+    background: url(./images/camara_iterna.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+} */
+
+li {
+    list-style-type: none;
+}
+
+/* a {
+
+} */
+
+/* NAVBAR */
+
+.navbar {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: row;
+    padding: 2em;
+    height: 3em;
+    justify-content: space-evenly;
+    color: #dadada;
+}
+
+.navbar > div {
+    /* border: 1px solid green; */
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.navbar > div:first-child > img {
+    max-width: 100%;
+    max-height: 100%;
+    padding: 0 1em;
+}
+
+.navbar > div:last-child > ul {
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: row;
+    max-height: 100%;
+}
+
+.navbar > div > ul > li {
+    border-bottom: 0px;
+    font-weight: bold;
+    margin-left: 1.2em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.navbar > div > ul > li:hover {
+    border-bottom: 2px solid #c8c8c8;
+    color: #c8c8c8;
+}
+
+/* HOME */
+
+.home > div { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home .title {
+    font-size: 4em;
+    color: white;
+    font-weight: bold;
+    font-family: 'Montserrat';
+    text-shadow: var(--shadow-blue)
+}
+
+.home .subtitle {
+    font-size: 1.4em;
+    color: whitesmoke;
+    text-shadow: var(--shadow-blue);
+    margin-top: 1.2em;
+}
+
+.home > div > button {
+    outline: none;
+    border: none;
+    margin-top: 3em;
+    padding: 1em 2.4em;
+    font-weight: bold;
+    color: whitesmoke;
+    background-color: navy;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.home > div > button:hover {
+    color: navy;
+    background-color: whitesmoke;
+}
