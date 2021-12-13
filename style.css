@@ -5,39 +5,47 @@
 }
 
 body {
-    background-color: #f8f8f8;
+    background-color: whitesmoke;
+    /* width: 100vw;
+    height: 100vh; */
+    font-family: 'Montserrat';
 }
 
-/* .container {
-    width: 100vw;
-    height: 100vh;
-    background: url(./images/camara_iterna.jpeg);
-    background-size: contain;
-    background-repeat: no-repeat;
-} */
+.container {
+    /* height: 100%; */
+}
 
 li {
     list-style-type: none;
 }
 
-/* a {
-
-} */
+.image-main {
+    width: 100vw;
+    height: 100vh;
+    background: url(./images/camara_dentro.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    filter: brightness(0.5);
+    z-index: -1;
+}
 
 /* NAVBAR */
 
 .navbar {
-    /* border: 1px solid red; */
+    position: fixed;
+    width: 100vw;
     display: flex;
     flex-direction: row;
     padding: 2em;
     height: 3em;
     justify-content: space-evenly;
     color: #dadada;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* z-index: 2; */
 }
 
 .navbar > div {
-    /* border: 1px solid green; */
     height: 100%;
     display: flex;
     align-items: center;
@@ -47,37 +55,59 @@ li {
     max-width: 100%;
     max-height: 100%;
     padding: 0 1em;
+    filter: invert(100%);
+}
+
+.navbar > div > span {
+    font-size: 1.2em;
 }
 
 .navbar > div:last-child > ul {
-    /* border: 1px solid blue; */
     display: flex;
     flex-direction: row;
     max-height: 100%;
 }
 
-.navbar > div > ul > li {
-    border-bottom: 0px;
-    font-weight: bold;
+.navbar > div > ul > a {
+    color: #c8c8c8;
+    text-decoration: none;
     margin-left: 1.2em;
     cursor: pointer;
+}
+
+.navbar > div > ul > a > li {
+    font-size: 1em;
+    font-weight: bold;
     transition: 0.3s;
 }
 
-.navbar > div > ul > li:hover {
-    border-bottom: 2px solid #c8c8c8;
-    color: #c8c8c8;
+.navbar > div > ul > a > li:hover {
+    border-bottom: 2px solid goldenrod;
+    color: white;
+    opacity: 100%;
+    transition: color 0.3s;
 }
 
 /* HOME */
 
-.home > div { 
+#home {
+    /* position: relative; */
+    border: 1px solid red;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    /* z-index: 2; */
+}
+
+#home > div { 
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    top: 40%;
 }
 
-.home .title {
+#home .title {
     font-size: 4em;
     color: white;
     font-weight: bold;
@@ -85,18 +115,18 @@ li {
     text-shadow: var(--shadow-blue)
 }
 
-.home .subtitle {
+#home .subtitle {
     font-size: 1.4em;
     color: whitesmoke;
     text-shadow: var(--shadow-blue);
     margin-top: 1.2em;
 }
 
-.home > div > button {
+button {
     outline: none;
     border: none;
     margin-top: 3em;
-    padding: 1em 2.4em;
+    padding: 1em 6em;
     font-weight: bold;
     color: whitesmoke;
     background-color: navy;
@@ -105,7 +135,86 @@ li {
     transition: 0.3s;
 }
 
-.home > div > button:hover {
+#home > div > button:hover {
     color: navy;
     background-color: whitesmoke;
+}
+
+/* DEPUTIES SEARCH */
+
+#search-area > div {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+}
+
+#search-area > div > * {
+    margin-bottom: 2.4em;
+}
+
+
+#search-area > div > span:nth-child(1) {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: navy;
+    margin-bottom: 1.4em;
+}
+
+#search-area > div > span:nth-child(2) {
+    font-size: 1.6em;
+    font-weight: bold;
+    color: navy;
+}
+
+input {
+    max-width: 30%;
+    height: 40px;
+    font-size: 1.2em;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+#search-area > div > input {
+
+}
+
+#deputies {
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: repeat(2, auto);
+    gap: 2em;
+    justify-content: center;
+    padding: 0 2em;
+}
+
+.deputy {
+    border: 1px solid red;
+    text-align: center;
+}
+
+.deputy-name {
+    display: inline;
+    width: fit-content;
+}
+
+.deputy-details {
+    max-width: 40%;
+    align-self: center;
+    margin: 0 auto;
+}
+
+.deputy > a > span {
+    display: block;
+}
+
+.deputy > a > div {
+    border: 1px solid blue;
+}
+
+.deputy > div {
+    border: 1px solid green;
+}
+
+.deputy > a > img {
+    border: 1px solid black;
 }
