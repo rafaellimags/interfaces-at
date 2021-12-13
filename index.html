@@ -9,8 +9,8 @@
         content="Projeto modelo de single page para recuperacao de dados da api de Dados Abertos da Camara dos Deputados">
     <meta name="keywords" content="HTML, CSS, JavaScript, SPA, landing page, Infnet, Frontend">
     <meta name="author" content="Rafael Lima">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/57a17ca7fe.js" crossorigin="anonymous"></script>
     <script src="./modernizr-custom.js"></script>
     <title>Interfaces - AT</title>
@@ -18,79 +18,210 @@
 
 <body>
     <div class="container">
+        <img src="./images/camara_dentro.jpeg" class="image-main">
         <div class="navbar">
-            <img src="" alt="" class="logo">
-            <ul>
-                <li><a href="#home"></a>INICIO</li>
-                <li><a href="#deputies"></a>DEPUTADOS</li>
-                <li><a href="#parties"></a>PARTIDOS</li>
-                <li><a href="#news"></a>NOTICIAS</li>
-                <li><a href="#events"></a>EVENTOS</li>
-                <li><a href="#contact"></a>CONTATO</li>
-                <li><a href="#assessment"></a>ASSESSMENT</li>
-            </ul>
+            <div>
+                <img src="./images/home_logo.svg.png" alt="" class="logo">
+                <span>Dados Abertos</span>
+            </div>
+            <div>
+                <ul>
+                    <a href="#home"><li>INICIO</li></a>
+                    <a href="#deputies"><li>DEPUTADOS</li></a>
+                    <a href="#parties-search"><li>PARTIDOS</li></a>
+                    <a href="#news"><li>NOTICIAS</li></a>
+                    <a href="#events"><li>EVENTOS</li></a>
+                    <a href="#contact"><li>CONTATO</li></a>
+                    <a href="#assessment"><li>ASSESSMENT</li></a>
+                </ul>
+            </div>
         </div>
-        <section class="home">
+        <section id="home">
             <div>
                 <h1 class="title">QUEM SÃO OS DEPUTADOS</h1>
                 <span class="subtitle">Conheça os deputados, seus partidos e legislaturas.</span>
                 <button>DEPUTADOS</button>
             </div>
         </section>
-        <section class="deputies">
-            <a href="#">
-                <div class="deputy">
-                    <img src="" alt="">
-                    <span>Fulano de Tal</span>
-                    <span>(PL-BA)</span>
-                    <span>Detalhes:</span>
-                    <ul>
-                        <li>Legislaturas em que exerceu mandato: <strong>56ª</strong></li>
-                        <li>Partidos pelos quais já foi deputado: <strong>PL, PHS</strong></li>
-                    </ul>
-                    <div class="social-networks">
-                        <a href=""><i class="fab fa-facebook-f"></i></a>
-                        <a href=""><i class="fab fa-twitter"></i></a>
-                        <a href=""><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </a>
-            <a href="#">
-                <div class="deputy">
-                    <img src="" alt="">
-                    <span>Fulano de Tal</span>
-                    <span>(PL-BA)</span>
-                    <span>Detalhes:</span>
-                    <ul>
-                        <li>Legislaturas em que exerceu mandato: <strong>56ª</strong></li>
-                        <li>Partidos pelos quais já foi deputado: <strong>PL, PHS</strong></li>
-                    </ul>
-                    <div class="social-networks">
-                        <a href=""><i class="fab fa-facebook-f"></i></a>
-                        <a href=""><i class="fab fa-twitter"></i></a>
-                        <a href=""><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </a>
-            <a href="#">
-                <div class="deputy">
-                    <img src="" alt="">
-                    <span>Fulano de Tal</span>
-                    <span>(PL-BA)</span>
-                    <span>Detalhes:</span>
-                    <ul>
-                        <li>Legislaturas em que exerceu mandato: <strong>56ª</strong></li>
-                        <li>Partidos pelos quais já foi deputado: <strong>PL, PHS</strong></li>
-                    </ul>
-                    <div class="social-networks">
-                        <a href=""><i class="fab fa-facebook-f"></i></a>
-                        <a href=""><i class="fab fa-twitter"></i></a>
-                        <a href=""><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </a>
+        <section id="search-area">
+            <div>
+                <span>DEPUTADOS</span>
+                <span>Consulte aqui os Deputados da Legislatura atual:</span>
+                <input type="text" placeholder="Nome do Deputado">
+                <button><i class="fas fa-search"></i>BUSCAR</button>
+            </div>
         </section>
-        <section class="parties-search">
+        <section id="deputies">
+            <div class="deputy">
+                <a href="#">
+                    <img src="./images/candidates/candidate1.png" alt="">
+                    <div class="deputy-part">
+                        <span>Fulano de Tal</span>
+                        <span>(PL-BA)</span>
+                    </div>
+                </a>
+                <div class="deputy-details">
+                    <ul>
+                        <li>Detalhes:</li>
+                        <li>Legislaturas em que exerceu mandato: <strong>56ª</strong></li>
+                        <li>Partidos pelos quais já foi deputado: <strong>PL, PHS</strong></li>
+                    </ul>
+                </div>
+                <div class="social-networks">
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="deputy">
+                <a href="#">
+                    <img src="./images/candidates/candidate2.png" alt="">
+                    <div class="deputy-part">
+                        <span>Fulano de Tal</span>
+                        <span>(PL-BA)</span>
+                    </div>
+                </a>
+                <div class="deputy-details">
+                    <ul>
+                        <li>Detalhes:</li>
+                        <li>Legislaturas em que exerceu mandato: <strong>56ª</strong></li>
+                        <li>Partidos pelos quais já foi deputado: <strong>PL, PHS</strong></li>
+                    </ul>
+                </div>
+                <div class="social-networks">
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="deputy">
+                <a href="#">
+                    <img src="./images/candidates/candidate3.png" alt="">
+                    <div class="deputy-part">
+                        <span>Fulano de Tal</span>
+                        <span>(PL-BA)</span>
+                    </div>
+                </a>
+                <div class="deputy-details">
+                    <ul>
+                        <li>Detalhes:</li>
+                        <li>Legislaturas em que exerceu mandato: <strong>56ª</strong></li>
+                        <li>Partidos pelos quais já foi deputado: <strong>PL, PHS</strong></li>
+                    </ul>
+                </div>
+                <div class="social-networks">
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="deputy">
+                <a href="#">
+                    <img src="./images/candidates/candidate4.png" alt="">
+                    <div class="deputy-part">
+                        <span>Fulano de Tal</span>
+                        <span>(PL-BA)</span>
+                    </div>
+                </a>
+                <div class="deputy-details">
+                    <ul>
+                        <li>Detalhes:</li>
+                        <li>Legislaturas em que exerceu mandato: <strong>56ª</strong></li>
+                        <li>Partidos pelos quais já foi deputado: <strong>PL, PHS</strong></li>
+                    </ul>
+                </div>
+                <div class="social-networks">
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="deputy">
+                <a href="#">
+                    <img src="./images/candidates/candidate5.png" alt="">
+                    <div class="deputy-part">
+                        <span>Fulano de Tal</span>
+                        <span>(PL-BA)</span>
+                    </div>
+                </a>
+                <div class="deputy-details">
+                    <ul>
+                        <li>Detalhes:</li>
+                        <li>Legislaturas em que exerceu mandato: <strong>56ª</strong></li>
+                        <li>Partidos pelos quais já foi deputado: <strong>PL, PHS</strong></li>
+                    </ul>
+                </div>
+                <div class="social-networks">
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="deputy">
+                <a href="#">
+                    <img src="./images/candidates/candidate6.png" alt="">
+                    <div class="deputy-part">
+                        <span>Fulano de Tal</span>
+                        <span>(PL-BA)</span>
+                    </div>
+                </a>
+                <div class="deputy-details">
+                    <ul>
+                        <li>Detalhes:</li>
+                        <li>Legislaturas em que exerceu mandato: <strong>56ª</strong></li>
+                        <li>Partidos pelos quais já foi deputado: <strong>PL, PHS</strong></li>
+                    </ul>
+                </div>
+                <div class="social-networks">
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="deputy">
+                <a href="#">
+                    <img src="./images/candidates/candidate7.png" alt="">
+                    <div class="deputy-part">
+                        <span>Fulano de Tal</span>
+                        <span>(PL-BA)</span>
+                    </div>
+                </a>
+                <div class="deputy-details">
+                    <ul>
+                        <li>Detalhes:</li>
+                        <li>Legislaturas em que exerceu mandato: <strong>56ª</strong></li>
+                        <li>Partidos pelos quais já foi deputado: <strong>PL, PHS</strong></li>
+                    </ul>
+                </div>
+                <div class="social-networks">
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="deputy">
+                <a href="#">
+                    <img src="./images/candidates/candidate2.png" alt="">
+                    <div class="deputy-part">
+                        <span>Fulano de Tal</span>
+                        <span>(PL-BA)</span>
+                    </div>
+                </a>
+                <div class="deputy-details">
+                    <ul>
+                        <li>Detalhes:</li>
+                        <li>Legislaturas em que exerceu mandato: <strong>56ª</strong></li>
+                        <li>Partidos pelos quais já foi deputado: <strong>PL, PHS</strong></li>
+                    </ul>
+                </div>
+                <div class="social-networks">
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </section>
+        <section id="parties-search">
             <div>
                 <h2 class="header">PATIDOS</h2>
                 <h3>Consulte aqui os Partidos existentes:</h3>
@@ -136,7 +267,7 @@
                 </div>
             </div>
         </section>
-        <section class="news">
+        <section id="news">
             <h2 class="header">NOTÍCIAS</h2>
             <div>
                 <img src="" alt="">
@@ -150,7 +281,7 @@
                 </div>
             </div>
         </section>
-        <section class="events">
+        <section id="events">
             <div class="header">
                 <h2>EVENTOS</h2>
                 <h3>Consulte aqui os Eventos agendados:</h3>
@@ -189,7 +320,7 @@
                 </div>
             </a>
         </section>
-        <section class="contact">
+        <section id="contact">
             <h2>CONTACT</h2>
             <div>
                 <form class="form" action="">
@@ -210,10 +341,12 @@
                     cumque nam deleniti. Laudantium.</p>
             </div>
         </section>
+        <footer>
+            <span>© Instituto Infnet - Assessment Interfaces Web</span>
+        </footer>
     </div>
-    <footer>
-        <span>© Instituto Infnet - Assessment Interfaces Web</span>
-    </footer>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
