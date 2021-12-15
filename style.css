@@ -597,8 +597,14 @@ footer {
     color: #fafafa;
     font-size: 3em;
     padding: 1em;
-    border: 1px solid white;
-    border-radius: 8px;
+    background: rgba(0,0,0,0.4);
+    transition: 0.3s;
+}
+
+#home-at > a > i:hover {
+    color: #3a3a3a;
+    background: #ffffffc5;
+    transition: 0.3s;
 }
 
 /* ASSESSMENT DISCIPLINES */
@@ -669,8 +675,13 @@ footer {
     color: #3d3d3d;
     font-size: 3em;
     padding: 1em;
-    border: 1px solid white;
-    border-radius: 8px;
+    transition: 0.3s;
+}
+
+#disciplines > a > i:hover {
+    color: #fff;
+    background: #353535;
+    transition: 0.3s;
 }
 
 
@@ -692,8 +703,12 @@ footer {
     color: #3d3d3d;
     font-size: 3em;
     padding: 1em;
-    border: 1px solid white;
-    border-radius: 8px;
+}
+
+#dev-scenario > a > i:hover {
+    color: #fff;
+    background: #353535;
+    transition: 0.3s;
 }
 
 /* SOBRE MIM */
@@ -704,8 +719,59 @@ footer {
     color: navy;
 }
 
+#about-me .card {
+    width: 80%;
+    display: flex;
+    background-color: white;
+    box-shadow: 0px 6px 22px -16px rgba(0,0,0,0.4);
+    -webkit-box-shadow: 0px 6px 22px -16px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0px 6px 22px -16px rgba(0,0,0,0.4);
+}
+
+#about-me .card > div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 1em;
+}
+
+#about-me .card > img {
+    width: 50%;
+}
+
+#about-me > div > div:nth-child(2) > h3 {
+    text-align: center;
+    font-size: 1.8em;
+    color: navy;
+}
+
+#about-me > div > div:nth-child(2) > div:nth-child(2) {
+    margin: 0 auto;
+    border-bottom: 1px solid slategray;
+    width: 25%;
+}
+
+#about-me > div > div:nth-child(2) > p {
+    text-align: justify;
+    line-height: 1.2em;
+    color: slategray;
+}
+
 #about-me > p {
     font-size: 1.2em;
     line-height: 1.2em;
     text-align: justify;
+}
+
+#about-me > div > div > div:nth-child(4) {
+    text-align: center;
+}
+
+#about-me > div > div > div:nth-child(4) > a {
+    margin: 0 0.5em;
+}
+
+#about-me > div > div > div:nth-child(4) > a > i {
+    color: #3d3d3d;
+    font-size: 3em;
 }
