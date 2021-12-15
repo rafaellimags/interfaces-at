@@ -18,38 +18,38 @@
 
 <body>
     <div class="container">
-        <img src="./images/camara_dentro.jpeg" class="image-main">
-        <div class="navbar">
+        <img src="./images/camara_dentro.jpeg" class="image-main" alt="Imagem de dentro da camara dos deputados">
+        <nav class="navbar">
             <div>
                 <img src="./images/home_logo.svg.png" alt="" class="logo">
                 <span>Dados Abertos</span>
             </div>
             <div>
                 <ul>
-                    <a href="#home">
-                        <li>INICIO</li>
-                    </a>
-                    <a href="#deputies">
-                        <li>DEPUTADOS</li>
-                    </a>
-                    <a href="#parties-search">
-                        <li>PARTIDOS</li>
-                    </a>
-                    <a href="#news">
-                        <li>NOTICIAS</li>
-                    </a>
-                    <a href="#events">
-                        <li>EVENTOS</li>
-                    </a>
-                    <a href="#contact">
-                        <li>CONTATO</li>
-                    </a>
-                    <a href="#assessment">
-                        <li>ASSESSMENT</li>
-                    </a>
+                    <li>
+                        <a href="#home">INICIO</a>
+                    </li>
+                    <li>
+                        <a href="#deputies">DEPUTADOS</a>
+                    </li>
+                    <li>
+                        <a href="#parties-search">PARTIDOS</a>
+                    </li>
+                    <li>
+                        <a href="#news">NOTICIAS</a>
+                    </li>
+                    <li>
+                        <a href="#events">EVENTOS</a>
+                    </li>
+                    <li>
+                        <a href="#contact">CONTATO</a>
+                    </li>
+                    <li>
+                        <a href="assessment.html">ASSESSMENT</a>
+                    </li>                
                 </ul>
             </div>
-        </div>
+        </nav>
         <section id="home">
             <div>
                 <h1 class="title">QUEM SÃO OS DEPUTADOS</h1>
@@ -59,7 +59,7 @@
         </section>
         <section id="deputies">
             <div class="search-area">
-                <span>DEPUTADOS</span>
+                <h2>DEPUTADOS</h2>
                 <span>Consulte aqui os Deputados da Legislatura atual:</span>
                 <input type="text" placeholder="Nome do Deputado">
                 <button><i class="fas fa-search"></i>BUSCAR</button>
@@ -235,7 +235,7 @@
         </section>
         <section id="parties-search">
             <div>
-                <span>PATIDOS</span>
+                <h2>PATIDOS</h2>
                 <span>Consulte aqui os Partidos existentes:</span>
                 <input type="text" name="parties-search">
                 <button><i class="fas fa-search"></i>BUSCAR</button>
@@ -351,7 +351,7 @@
             <h2>CONTATO</h2>
             <div>
                 <div>
-                    <form class="form" action="">
+                    <form class="form" action="#">
                         <input type="text" placeholder="Nome">
                         <input type="text" placeholder="Email">
                         <textarea name="message" id="message" cols="30" rows="10" placeholder="Mensagem"></textarea>

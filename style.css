@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 :root {
     --shadow-blue: #000080 2px 4px
@@ -6,7 +6,7 @@
 
 body {
     background-color: whitesmoke;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
 }
 
 .container {
@@ -74,20 +74,21 @@ a {
     max-height: 100%;
 }
 
-.navbar>div>ul>a {
+.navbar>div>ul>li>a {
     color: #c8c8c8;
     text-decoration: none;
     margin-left: 1.2em;
     cursor: pointer;
+    /* color: whitesmoke; */
 }
 
-.navbar>div>ul>a>li {
+.navbar>div>ul>li>a {
     font-size: 1em;
     font-weight: bold;
     transition: 0.3s;
 }
 
-.navbar>div>ul>a>li:hover {
+.navbar>div>ul>li>a:hover {
     border-bottom: 2px solid goldenrod;
     color: white;
     opacity: 100%;
@@ -172,7 +173,7 @@ button {
 }
 
 
-.search-area>span:nth-child(1) {
+.search-area>h2:nth-child(1) {
     font-size: 1.2em;
     font-weight: bold;
     color: navy;
@@ -288,7 +289,7 @@ button {
     margin-bottom: 2em;
 }
 
-#parties-search > div > span:nth-child(1) {
+#parties-search > div > h2:nth-child(1) {
     font-size: 1.2em;
     font-weight: bold;
     color: navy;
@@ -552,4 +553,159 @@ footer {
     text-align: center;
     background-color: navy;
     color: white;
+}
+
+/* ASSESSMENT */
+
+#home-at,
+#disciplines,
+#dev-scenario,
+#about-me {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+}
+
+#home-at,
+#dev-scenario,
+#about-me {
+    height: 100vh;
+}
+
+#disciplines {
+    padding-top: 11em;
+}
+
+#home-at > h1 {
+    color: #f0f0f0;
+    font-size: 4em;
+    padding: 1em;
+}
+
+#home-at > p {
+    color: #f0f0f0;
+    font-size: 1.6em;
+    text-align: justify;
+    max-width: 720px;
+    line-height: 1.4em;
+    padding: 1em;
+}
+
+#home-at > a > i {
+    color: #fafafa;
+    font-size: 3em;
+    padding: 1em;
+    border: 1px solid white;
+    border-radius: 8px;
+}
+
+/* ASSESSMENT DISCIPLINES */
+
+#disciplines > h2 {
+    font-size: 1.8em;
+    margin-bottom: 3em;
+    color: navy;
+}
+
+#disciplines > div.javascript {
+    padding: 6em 0;
+}
+
+#disciplines > div.interfaces > div:nth-child(2),
+#disciplines > div.interfaces > div:nth-child(3) > p,
+#disciplines > div.javascript > div:nth-child(2),
+#disciplines > div.javascript > div:nth-child(3) > p {
+    font-size: 1.2em;
+}
+
+.interfaces > h3,
+.javascript > h3,
+.interfaces > div:nth-child(3) > h3,
+.javascript > div:nth-child(3) > h3 {
+    font-size: 1.4em;
+    color: navy;
+    text-align: center;
+}
+
+.interfaces > div:nth-child(2),
+.javascript > div:nth-child(2),
+.interfaces > div:nth-child(3) > p,
+.javascript > div:nth-child(4) > p,
+.javascript > div:nth-child(3) > p {
+    padding: 2em 0;
+    text-align: justify;
+}
+
+.interfaces > div:nth-child(2) > ul:nth-child(4),
+.interfaces > div:nth-child(2) > ul:nth-child(6),
+.javascript > div:nth-child(2) > ul:nth-child(4),
+.javascript > div:nth-child(2) > ul:nth-child(6) {
+    padding: 1em 0 1em 2.4em;
+}
+
+.interfaces > div:nth-child(2) > ul:nth-child(4) > li,
+.interfaces > div:nth-child(2) > ul:nth-child(6) > li,
+.javascript > div:nth-child(2) > ul:nth-child(4) > li,
+.javascript > div:nth-child(2) > ul:nth-child(6) > li {
+    list-style: disc;
+    margin-bottom: 0.8em;
+    font-size: 0.9em;
+}
+
+.interfaces > div:nth-child(2) > *,
+.javascript > div:nth-child(2) > * {
+    line-height: 1.2em;
+    margin-bottom: 1.8em;
+}
+
+#disciplines > div.interfaces > div:nth-child(3) > p,
+#disciplines > div.javascript > div:nth-child(3) > p {
+    line-height: 1.2em;
+}
+
+#disciplines > a > i {
+    color: #3d3d3d;
+    font-size: 3em;
+    padding: 1em;
+    border: 1px solid white;
+    border-radius: 8px;
+}
+
+
+/* CENARIOS WEB */
+
+#dev-scenario > h2 {
+    font-size: 1.8em;
+    margin-bottom: 3em;
+    color: navy;
+}
+
+#dev-scenario > p {
+    font-size: 1.2em;
+    line-height: 1.2em;
+    text-align: justify;
+}
+
+#dev-scenario > a > i {
+    color: #3d3d3d;
+    font-size: 3em;
+    padding: 1em;
+    border: 1px solid white;
+    border-radius: 8px;
+}
+
+/* SOBRE MIM */
+
+#about-me > h2 {
+    font-size: 1.8em;
+    margin-bottom: 3em;
+    color: navy;
+}
+
+#about-me > p {
+    font-size: 1.2em;
+    line-height: 1.2em;
+    text-align: justify;
 }
