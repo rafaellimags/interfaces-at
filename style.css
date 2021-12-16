@@ -64,8 +64,9 @@ a {
     filter: invert(100%);
 }
 
-.navbar>div>span {
+.navbar>div>a>span {
     font-size: 1.2em;
+    color: whitesmoke;
 }
 
 .navbar>div:last-child>ul {
@@ -93,6 +94,38 @@ a {
     color: white;
     opacity: 100%;
     transition: color 0.3s;
+}
+
+@media (max-width: 720px) {
+    .navbar {
+        display: unset;
+        height: fit-content;
+        text-align: center;
+        padding: 1em 0;
+    }
+
+    .navbar > div,
+    .navbar>div:last-child>ul {
+        flex-direction: column;
+    }
+
+    .navbar > div:nth-child(2) > ul > li {
+        padding: 1em 0;
+    }
+
+    .navbar > div:nth-child(2) > ul > li > a {
+        margin: 0;
+    }
+
+    .navbar > div:nth-child(1) > a {
+        padding: 1em;
+    }
+
+    .navbar>div:first-child>img {
+        width: 48px;
+        height: 48px;
+    }
+
 }
 
 /* HOME */
@@ -142,9 +175,22 @@ button {
     transition: 0.3s;
 }
 
-#home>div>button:hover {
+button:hover {
+    background-color: royalblue;
+    transition: 0.3s;
+}
+
+#home>div>a>button:hover {
     color: navy;
     background-color: whitesmoke;
+}
+
+@media (max-width: 720px) {
+    #home {
+        position: relative;
+        text-align: center;
+        top: 180px;
+    }
 }
 
 /* DEPUTIES SEARCH */
@@ -269,6 +315,14 @@ button {
     margin: 0 0.6em;
 }
 
+@media (max-width: 720px) {
+
+    #deputies {
+        display: unset;
+    }
+
+}
+
 /* parties search REPETE */
 
 #parties-search {
@@ -343,6 +397,16 @@ button {
     padding: 1em;
 }
 
+@media (max-width: 720px) {
+    #parties-search {
+        display: unset;
+    }
+
+    .parties {
+        display: unset;
+    }
+}
+
 /* NEWS */
 
 #news {
@@ -354,15 +418,26 @@ button {
 
 #news > div:first-child {
     text-align: center;
-    margin: 1em auto;
+    margin: 2em auto;
 }
 
 #news > div:first-child > h2 {
     font-size: 1.4em;
 }
 
-#news > div:nth-child(2) > img {
-    width: 40%;
+#news > div:nth-child(2) > div:nth-child(1) {
+    overflow: hidden;
+}
+
+#news > div:nth-child(2) > div:nth-child(1) > img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s;
+}
+
+#news > div:nth-child(2) > div:nth-child(1) > img:hover {
+    transform: scale(1.4);
+
 }
 
 #news > div:nth-child(2) {
@@ -370,14 +445,16 @@ button {
     flex-direction: row;
 }
 
-#news > div:nth-child(2) > * {
-    padding: 2em;
+#news > div:nth-child(2) > div.image-details {
+    padding-left: 1.6em;
+    text-align: justify;
 }
 
 .image-details {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    max-width: 50%;
 }
 
 .image-details > h3 {
@@ -393,6 +470,23 @@ button {
 .image-details > span {
     margin-top: 1em;
     text-align: center;
+}
+
+@media (max-width: 720px) {
+    #news > div:nth-child(2) {
+        flex-direction: column;
+    }
+
+    #news > div:nth-child(2) {
+        max-width: 80%;
+        align-items: center;
+        margin: auto;
+    }
+
+    #news > div:nth-child(2) > div.image-details {
+        padding: 3em 0;
+        max-width: 100%;
+    }
 }
 
 /* EVENTS */
@@ -482,6 +576,32 @@ button {
     padding: 2em;
 }
 
+@media (max-width: 720px) {
+
+    #events .event-search .terms input:first-child,
+    #events > div.event-search > div > input[type=text]:nth-child(2) {
+        width: 80%;
+        margin: auto;
+        margin-top: 1em;
+        padding: 0;
+    }
+
+    #events > div.event-search > div,
+    #events > div:nth-child(3) {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #events > div.event-search > div > button {
+        width: 80%;
+        margin: 2em auto;
+    }
+
+    #events > div:nth-child(3) {
+        align-items: center;
+    }
+}
+
 /* CONTACT */
 
 #contact {
@@ -553,6 +673,24 @@ footer {
     text-align: center;
     background-color: navy;
     color: white;
+}
+
+@media (max-width: 720px) {
+    #contact > div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #contact > div > div:first-child,
+    #contact > div > div:last-child {
+        width: 80%;
+        text-align: justify;
+    }
+
+    #contact > div > div:last-child > h3 {
+        text-align: center;
+        margin-top: 2em;
+    }
 }
 
 /* ASSESSMENT */
